@@ -4,12 +4,17 @@
  */
 
 // ── API fetch helper ─────────────────────────────────────────────────────────
+const API_BASE_URL = "http://localhost:5000";
+
 async function fetchAPI(path) {
-  const res = await fetch(path);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const res = await fetch(`${API_BASE_URL}${path}`);
+
+  if (!res.ok) {
+    throw new Error(`HTTP ${res.status}`);
+  }
+
   return res.json();
 }
-
 // ── Date formatter ───────────────────────────────────────────────────────────
 function formatDate(dateStr) {
   return new Date(dateStr + 'T00:00:00').toLocaleDateString('en-GB', {
