@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GoalZone – Your ultimate football destination. Latest matches, teams, news and more.">
+  <title>GoalZone – Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+</head>
+<body>
+
+  <!-- ══════════════ NAVBAR ══════════════ -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <span>⚽</span>&nbsp;Goal<span class="brand-accent">Zone</span>
+        </a>
+        <ul class="navbar-links">
+          <li><a href="index.html"   class="nav-link">Home</a></li>
+          <li><a href="matches.html" class="nav-link">Matches</a></li>
+          <li><a href="teams.html"   class="nav-link">Teams</a></li>
+          <li><a href="news.html"    class="nav-link">News</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="index.html"   class="nav-link">Home</a>
+      <a href="matches.html" class="nav-link">Matches</a>
+      <a href="teams.html"   class="nav-link">Teams</a>
+      <a href="news.html"    class="nav-link">News</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════ HERO ══════════════ -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">Your Ultimate Football Destination</div>
+        <h1 class="hero-title">
+          Welcome to<br>
+          <span class="accent">GoalZone</span>
+        </h1>
+        <p class="hero-desc">
+          Stay ahead of the game with live match results, team profiles,
+          tactical analysis and everything happening in world football.
+        </p>
+        <div class="hero-actions">
+          <a href="matches.html" class="btn btn-primary">View Matches ⚽</a>
+          <a href="news.html"    class="btn btn-outline">Latest News</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hero-stat-val">6+</div><div class="hero-stat-lbl">Fixtures</div></div>
+          <div><div class="hero-stat-val">6</div><div class="hero-stat-lbl">Top Teams</div></div>
+          <div><div class="hero-stat-val">5</div><div class="hero-stat-lbl">News Stories</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FEATURED MATCHES ══════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="chip">This Week</div>
+        <h2 class="section-title">Featured <span>Matches</span></h2>
+        <p class="section-sub">Top fixtures from across Europe's leading leagues</p>
+      </div>
+      <div id="home-matches">
+        <div class="loading"><div class="spinner"></div><span>Loading…</span></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="matches.html" class="btn btn-outline">View All Matches →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ POPULAR TEAMS ══════════════ -->
+  <section class="section" style="background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="chip">Top Clubs</div>
+        <h2 class="section-title">Popular <span>Teams</span></h2>
+        <p class="section-sub">The world's most iconic football clubs</p>
+      </div>
+      <div id="home-teams">
+        <div class="loading"><div class="spinner"></div><span>Loading…</span></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="teams.html" class="btn btn-outline">Explore All Teams →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ LATEST NEWS ══════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="chip">Breaking</div>
+        <h2 class="section-title">Latest <span>News</span></h2>
+        <p class="section-sub">Analysis, previews and stories from world football</p>
+      </div>
+      <div id="home-news">
+        <div class="loading"><div class="spinner"></div><span>Loading…</span></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="news.html" class="btn btn-outline">Read All News →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════ FOOTER ══════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">⚽ Goal<span style="color:var(--green)">Zone</span></div>
+          <p class="footer-desc">Your ultimate football destination – scores, teams, news and the stories that matter.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Tech</div>
+          <ul class="footer-links">
+            <li><a href="#">Flask (Python)</a></li>
+            <li><a href="#">SQLite</a></li>
+            <li><a href="#">Vanilla JS</a></li>
+            <li><a href="#">CSS3</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 GoalZone. Built with Flask &amp; SQLite.</span>
+        <span>A football web project ⚽</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    /* Home page inline – load first 3 items from each API */
+    const catBadge = {'Analysis':'badge-blue','Preview':'badge-gold','Champions League':'badge-purple','Features':'badge-green','Tactics':'badge-blue'};
+
+    function logoImg(url, name) {
+      return url
+        ? `<img class="team-logo" src="${url}" alt="${name}" onerror="this.outerHTML='<div class=logo-placeholder>⚽</div>'">`
+        : `<div class="logo-placeholder">⚽</div>`;
+    }
+
+    async function loadSection(id, url, renderFn, limit) {
+      try {
+        const data = await fetchAPI(url);
+        const items = Object.values(data).find(Array.isArray).slice(0, limit);
+        document.getElementById(id).innerHTML = renderFn(items);
+        setTimeout(initScrollAnimations, 60);
+      } catch {
+        document.getElementById(id).innerHTML =
+          `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Start the Flask server to load data.</p></div>`;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+      loadSection('home-matches', '/api/matches', matches =>
+        `<div class="matches-grid">${matches.map(m => `
+        <div class="match-card fade-up">
+          <div class="match-card-top">
+            <span class="badge badge-green">${m.competition}</span>
+            <span class="match-comp-label">${formatDate(m.date)} · ${m.time}</span>
+          </div>
+          <div class="match-teams">
+            <div class="match-team">${logoImg(m.home_logo, m.home_team)}<span class="team-name-sm">${m.home_team}</span></div>
+            <div class="match-score"><span class="score-val">${m.home_score} – ${m.away_score}</span><span class="score-vs">VS</span></div>
+            <div class="match-team">${logoImg(m.away_logo, m.away_team)}<span class="team-name-sm">${m.away_team}</span></div>
+          </div>
+          <div class="match-footer"><span>🏟️ ${m.venue}</span><span class="badge badge-green">⏰ Upcoming</span></div>
+        </div>`).join('')}</div>`, 3);
+
+      loadSection('home-teams', '/api/teams', teams =>
+        `<div class="teams-grid">${teams.map(t => `
+        <div class="team-card fade-up">
+          ${t.logo ? `<img class="team-card-logo" src="${t.logo}" alt="${t.name}" onerror="this.outerHTML='<div class=team-logo-ph>🏆</div>'">` : `<div class="team-logo-ph">🏆</div>`}
+          <div class="team-name">${t.name}</div>
+          <div class="team-country">🌍 ${t.country}</div>
+          <div class="team-meta"><span>📅 Est. ${t.founded}</span><span>🏟️ ${t.stadium}</span></div>
+          <p class="team-desc">${t.description}</p>
+        </div>`).join('')}</div>`, 3);
+
+      loadSection('home-news', '/api/news', articles =>
+        `<div class="news-grid">${articles.map(a => {
+          const bc = catBadge[a.category] || 'badge-green';
+          const initials = a.author.split(' ').map(w => w[0]).join('');
+          const fb = 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&q=80';
+          return `
+          <div class="news-card fade-up">
+            <div class="news-img-wrap">
+              <img src="${a.image}" alt="${a.title}" loading="lazy" onerror="this.src='${fb}'">
+              <div class="news-img-overlay"></div>
+              <div class="news-cat-badge"><span class="badge ${bc}">${a.category}</span></div>
+            </div>
+            <div class="news-body">
+              <h3 class="news-title">${a.title}</h3>
+              <p class="news-desc">${a.description}</p>
+              <div class="news-meta">
+                <div class="news-author"><div class="author-av">${initials}</div><span>${a.author}</span></div>
+                <span>${formatDate(a.date)}</span>
+              </div>
+            </div>
+          </div>`;
+        }).join('')}</div>`, 3);
+    });
+  </script>
+</body>
+</html>
