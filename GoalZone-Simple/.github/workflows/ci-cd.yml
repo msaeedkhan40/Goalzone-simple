@@ -1,5 +1,5 @@
 
-name: GoalZone CI/CD
+name: GoalZone Full CI/CD
 
 on:
   push:
@@ -37,3 +37,19 @@ jobs:
           context: ./backend
           push: true
           tags: msaeedkhan40/goalzone-backend:latest
+
+  deploy:
+    needs: build-and-push
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Deploy GoalZone
+        run: |
+          docker compose pull
+          docker compose up -d --remove-orphans
+
+      - name: Check running containers
+        run: docker compose ps

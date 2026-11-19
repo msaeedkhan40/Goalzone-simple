@@ -19,7 +19,10 @@ from flask_cors import CORS
 # ── App setup ─────────────────────────────────────────────────────────────────
 BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
 FRONTEND  = os.path.join(BASE_DIR, '..', 'frontend')
-DB_PATH   = os.path.join(BASE_DIR, 'goalzone.db')
+DB_DIR = os.path.join(BASE_DIR, "data")
+os.makedirs(DB_DIR, exist_ok=True)
+
+DB_PATH = os.path.join(DB_DIR, "goalzone.db")
 
 app = Flask(__name__, static_folder=FRONTEND, static_url_path='')
 CORS(app)
