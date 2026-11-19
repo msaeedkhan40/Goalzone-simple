@@ -48,7 +48,19 @@ jobs:
 
       - name: Deploy GoalZone
         run: |
-          docker compose pull
+          for i in 1 2 3; do
+            if docker compose pull; then
+              break
+            fi
+
+            if [ "$i" -eq 3 ]; then
+              exit 1
+            fi
+
+            echo "Pull failed. Retrying in 15 seconds..."
+            sleep 15
+          done
+
           docker compose up -d --remove-orphans
 
       - name: Check running containers
