@@ -1,5 +1,6 @@
 services:
   frontend:
+    build: ./frontend
     image: msaeedkhan40/goalzone-frontend:latest
     container_name: goalzone-frontend
     ports:
@@ -11,8 +12,6 @@ services:
   backend:
     image: msaeedkhan40/goalzone-backend:latest
     container_name: goalzone-backend
-    ports:
-      - "5000:5000"
     volumes:
       - goalzone_data:/app/data
     restart: unless-stopped

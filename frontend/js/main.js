@@ -4,7 +4,7 @@
  */
 
 // ── API fetch helper ─────────────────────────────────────────────────────────
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "";
 
 async function fetchAPI(path) {
   const res = await fetch(`${API_BASE_URL}${path}`);
